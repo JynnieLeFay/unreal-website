@@ -6504,6 +6504,15 @@ body.home-page-body .hero-guild-logo {
  letter-spacing:.14em;
  color:var(--gold);
 }
+.comics-page-body .comic-entry > .comic-publication-date{
+ display:block;
+ margin:14px auto 0;
+ color:#bda17a;
+ font-size:16px !important;
+ line-height:1.5;
+ letter-spacing:.02em;
+ text-align:center;
+}
 .comics-page-body .comic-discord-copy{
  max-width:760px;
  margin:0 auto 20px;
