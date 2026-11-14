@@ -1,2 +1,2 @@
 User-agent: *
-Allow: /
+Allow: /\nSitemap: https://unreal-wow-forever.pages.dev/sitemap.xml\n
