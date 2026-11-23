@@ -7,7 +7,7 @@
 <meta content="Entdecke gemeinsame Erlebnisse, Gildenaktionen und Meilensteine von Unreal, der Horde-PvE-Gilde in World of Warcraft Forever." name="description"/>
 <meta content="#100705" name="theme-color"/>
 <title>Gildenerfolge von Unreal | WoW Forever Horde-PvE</title>
-<link href="styles.css?v=v20-home-spacing-header-crest" rel="stylesheet"/>
+<link href="styles.css?v=v28-achievement-first-level" rel="stylesheet"/>
 <meta content="website" property="og:type"/><meta content="de_DE" property="og:locale"/><meta content="Unreal – World of Warcraft Forever" property="og:site_name"/><meta content="Gildenerfolge von Unreal | WoW Forever Horde-PvE" property="og:title"/><meta content="Entdecke gemeinsame Erlebnisse, Gildenaktionen und Meilensteine von Unreal, der Horde-PvE-Gilde in World of Warcraft Forever." property="og:description"/><meta content="summary" name="twitter:card"/><meta content="Gildenerfolge von Unreal | WoW Forever Horde-PvE" name="twitter:title"/><meta content="Entdecke gemeinsame Erlebnisse, Gildenaktionen und Meilensteine von Unreal, der Horde-PvE-Gilde in World of Warcraft Forever." name="twitter:description"/><meta content="index,follow,max-image-preview:large" name="robots"/></head>
 <body class="achievements-page-body achievements-page-body">
 <header class="site-header">
@@ -49,12 +49,25 @@
 <span class="eyebrow">Das Archiv</span>
 <h3>Unsere Beweisstücke</h3>
 </div>
-<!-- Filter werden automatisch aus den später eingetragenen Screenshots und deren Daten erzeugt. -->
-<div class="achievement-gallery" data-achievement-gallery="">
-<div class="achievement-empty-state">
-<span aria-hidden="true" class="achievement-empty-ornament">✦</span>
-<p>Die ersten Beweisstücke werden hier bald ausgestellt.</p>
+<div aria-label="Erfolge filtern" class="achievement-filters" role="group">
+<button aria-pressed="true" class="is-active" data-achievement-filter="all" type="button">Alle</button>
+<button aria-pressed="false" data-achievement-filter="gildenerfolge" type="button">Gildenerfolge</button>
+<button aria-pressed="false" data-achievement-filter="raid-erfolge" type="button">Raid-Erfolge</button>
+<button aria-pressed="false" data-achievement-filter="sonstiges" type="button">Sonstiges</button>
 </div>
+<div class="achievement-gallery" data-achievement-gallery="">
+<article class="achievement-card" data-achievement-category="gildenerfolge" data-achievement-id="0001">
+<figure class="achievement-card-image">
+<img alt="Druide in Bärengestalt vor einem Totenschädel; darunter der goldene Schriftzug FIRST LEVEL 60." decoding="async" height="918" loading="lazy" src="assets/unreal-gildenerfolg-0001-erster-level-60.webp" width="1560"/>
+</figure>
+<div class="achievement-card-copy">
+<p class="achievement-category-label">Gildenerfolge</p>
+<h4>Hurra, unser Druide hat es geschafft!</h4>
+<p>Der erste Level-60er bei Unreal. Wir gratulieren herzlich zu dieser bärenstarken Leistung!</p>
+<time class="achievement-date" datetime="2026-11-22">22. November 2026</time>
+</div>
+</article>
+<p aria-live="polite" class="achievement-empty-state" hidden>Für diese Rubrik gibt es noch keine Beweisstücke.</p>
 </div>
 </section>
 </section>
