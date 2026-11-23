@@ -58,3 +58,30 @@ if (!document.body.classList.contains("home-page-body")) {
   window.addEventListener("scroll", updateBackToTop, { passive: true });
   backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
+
+// Erfolgsarchiv: Einträge nach ihren redaktionellen Rubriken filtern.
+const achievementArchive = document.querySelector(".achievement-archive");
+if (achievementArchive) {
+  const filterButtons = [...achievementArchive.querySelectorAll("[data-achievement-filter]")];
+  const achievementCards = [...achievementArchive.querySelectorAll("[data-achievement-category]")];
+  const emptyState = achievementArchive.querySelector(".achievement-empty-state");
+
+  filterButtons.forEach(button => button.addEventListener("click", () => {
+    const selectedCategory = button.dataset.achievementFilter;
+    let visibleCards = 0;
+
+    achievementCards.forEach(card => {
+      const visible = selectedCategory === "all" || card.dataset.achievementCategory === selectedCategory;
+      card.hidden = !visible;
+      if (visible) visibleCards += 1;
+    });
+
+    filterButtons.forEach(filterButton => {
+      const active = filterButton === button;
+      filterButton.classList.toggle("is-active", active);
+      filterButton.setAttribute("aria-pressed", String(active));
+    });
+
+    if (emptyState) emptyState.hidden = visibleCards > 0;
+  }));
+}
